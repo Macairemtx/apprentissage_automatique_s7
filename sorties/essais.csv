@@ -1,0 +1,16 @@
+essai,auc_cv,ecart_type,auc_test_interne,secondes,verdict,note,vs_plancher
+E0 plancher : trier sur une variable,0.578,0.0123,0.5606,4.2,référence,,-0.0
+E1 régression logistique (variables standardisées),0.8592,0.0107,,0.4,,"linéaire, lien supposé monotone",0.2812
+E2 Bayes naïf gaussien (variables brutes),0.8835,0.0079,,0.2,,"indépendance, densités supposées gaussiennes",0.3055
+E3 Bayes naïf gaussien après transformation en quantiles normaux,0.8817,0.009,,4.8,,corrige la forme des marges,0.3037
+"E4 gradient boosting d'histogrammes (sklearn, 300 arbres)",0.8443,0.0115,,10.0,,"interactions possibles, coûteux",0.2663
+"E5 Bayes naïf par quantiles, 64 tranches, sans lissage entre voisines",0.7532,0.0134,,1.6,,chaque tranche jugée seule : bruit,0.1752
+"E6 Bayes naïf par quantiles, 64 tranches lissées",0.8614,0.0086,,1.8,,notre modèle,0.2834
+"E7 Bayes naïf par quantiles, 256 tranches, peu lissé",0.628,0.0151,,2.2,,tranches fines : sur-apprentissage,0.05
+"E8 Bayes naïf par quantiles, 100 variables choisies dans le pli",0.8622,0.0105,0.8538,16.2,,sélection décidée par la courbe,0.2842
+"E9 Bayes naïf par quantiles, 20 meilleures variables seulement",0.7614,0.0139,,14.1,,« les variables fortes suffisent » : faux,0.1834
+E10 poids par variable (logistique sur les log-rapports),0.8596,0.0123,,5.1,,corrige les redondances éventuelles,0.2816
+E11 boosting sur les log-rapports,0.8209,0.0065,,19.8,,cherche des interactions,0.2429
+M1 mutation : fuite par le découpage (tranches apprises sur tout),1.0,0.0,,,mutation,faux gain +0.3810,0.422
+M2 mutation : cible mélangée,0.4929,0.0199,,10.4,mutation,contrôle du protocole,-0.0851
+M3 mutation : moitié contre moitié,0.8465,0.0069,,,mutation,A→B 0.8534 / B→A 0.8395,0.2685

@@ -1,0 +1,9 @@
+situation,AUC test interne
+aucune perturbation,0.8538
+bruit 5 % de l'écart-type,0.8522
+bruit 10 % de l'écart-type,0.8481
+bruit 25 % de l'écart-type,0.8363
+sans les 10 variables les plus fortes,0.8299
+appris sur 10 % des données,0.7294
+appris sur 25 % des données,0.7993
+appris sur 50 % des données,0.8322

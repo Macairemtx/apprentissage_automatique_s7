@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+# les données du cours ne se versionnent pas (302 Mo, lecture seule sur le Drive)
+donnees/*.csv

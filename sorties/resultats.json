@@ -1,0 +1,14 @@
+{
+  "fichier": "donnees\\train_extrait.csv",
+  "lignes": 19844,
+  "plancher_cv": 0.5780428579388566,
+  "modele": "Bayes naïf par quantiles, 64 tranches, 100 variables",
+  "k": 100,
+  "auc_cv": 0.8621631894799169,
+  "auc_test_interne": 0.8538282430989891,
+  "plancher_test_interne": 0.5605795201352619,
+  "part_sollicitee": 0.20888188976377953,
+  "cout_fp": 2.0,
+  "cout_fn": 20.0,
+  "duree_notebook_s": 231.37016540000332
+}
